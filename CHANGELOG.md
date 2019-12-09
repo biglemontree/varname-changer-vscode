@@ -12,7 +12,7 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
 - `Fixed` for any bug fixes.
 - `Security` in case of vulnerabilities.
 
-## [0.3.0] - 2019-12-09
+## [0.2.1] - 2019-12-09
 ### Fixed
 - Change CN command line to EN.
 
