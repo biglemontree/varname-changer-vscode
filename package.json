@@ -24,17 +24,17 @@
 			{
 				"command": "varnameChanger.toHump",
 				"title": "底杠转驼峰",
-				"category": "转驼峰"
+				"category": "varnameChanger.toHump"
 			},
 			{
 				"command": "varnameChanger.toBottomLine",
 				"title": "驼峰转底杠",
-				"category": "转底杠"
+				"category": "varnameChanger.toBottomLine"
 			},
 			{
 				"command": "varnameChanger.deleteQuote",
 				"title": "删除引号",
-				"category": "删引号"
+				"category": "varnameChanger.deleteQuote"
 			}
 		],
 		"keybindings": [

@@ -12,6 +12,10 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
 - `Fixed` for any bug fixes.
 - `Security` in case of vulnerabilities.
 
+## [0.3.0] - 2019-12-09
+### Fixed
+- Change CN command line to EN.
+
 ## [0.2.0] - 2019-12-09
 ### Changed
 - Change icon file path.
@@ -20,6 +24,7 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
 ### Added
 - Support context menu.
 - A simple icon for this extension.
+
 ### Changed
 - Convenient keybindings than before.
 
