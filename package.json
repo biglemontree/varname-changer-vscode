@@ -1,0 +1,86 @@
+{
+	"name": "varname-changer",
+	"displayName": "Varname Changer",
+	"description": "Change your variable name easily!",
+	"version": "0.0.1",
+	"publisher": "urnotzane",
+	"engines": {
+		"vscode": "^1.40.0"
+	},
+	"categories": [
+		"Formatters",
+		"Extension Packs",
+		"Other"
+	],
+	"activationEvents": [
+		"onCommand:varnameChanger.toBottomLine",
+		"onCommand:varnameChanger.toHump",
+		"onCommand:varnameChanger.deleteQuote"
+	],
+	"main": "./out/extension.js",
+	"contributes": {
+		"commands": [
+			{
+				"command": "varnameChanger.toHump",
+				"title": "varnameChanger.toHump",
+				"category": "转驼峰"
+			},
+			{
+				"command": "varnameChanger.toBottomLine",
+				"title": "varnameChanger.toBottomLine",
+				"category": "转底杠"
+			},
+			{
+				"command": "varnameChanger.deleteQuote",
+				"title": "varnameChanger.deleteQuote",
+				"category": "删引号"
+			}
+		],
+		"keybindings": [
+			{
+				"command": "varnameChanger.toHump",
+				"key": "ctrl+f1",
+				"mac": "cmd+f1",
+				"when": "editorTextFocus"
+			},
+			{
+				"command": "varnameChanger.toBottomLine",
+				"key": "ctrl+f2",
+				"mac": "cmd+f2",
+				"when": "editorTextFocus"
+			},
+			{
+				"command": "varnameChanger.deleteQuote",
+				"key": "ctrl+shift+'",
+				"mac": "cmd+shift+'",
+				"when": "editorTextFocus"
+			}
+		]
+	},
+	"scripts": {
+		"vscode:prepublish": "npm run compile",
+		"compile": "tsc -p ./",
+		"watch": "tsc -watch -p ./",
+		"pretest": "npm run compile",
+		"test": "node ./out/test/runTest.js"
+	},
+	"devDependencies": {
+		"@types/glob": "^7.1.1",
+		"@types/mocha": "^5.2.7",
+		"@types/node": "^12.11.7",
+		"@types/vscode": "^1.40.0",
+		"glob": "^7.1.5",
+		"mocha": "^6.2.2",
+		"typescript": "^3.6.4",
+		"tslint": "^5.20.0",
+		"vscode-test": "^1.2.2"
+	},
+  "bugs": {
+      "url": "https://github.com/urnotzane/varname-changer-vscode/issues"
+  },
+  "repository": {
+      "type": "git",
+      "url": "https://github.com/urnotzane/varname-changer-vscode.git"
+  },
+  "homepage": "https://github.com/urnotzane/varname-changer-vscode/blob/master/README.md"
+}
