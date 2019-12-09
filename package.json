@@ -2,8 +2,9 @@
 	"name": "varname-changer",
 	"displayName": "Varname Changer",
 	"description": "Change your variable name easily!",
-	"version": "0.0.1",
+	"version": "0.1.0",
 	"publisher": "urnotzane",
+	"icon": "src/img/icon.png",
 	"engines": {
 		"vscode": "^1.40.0"
 	},
@@ -22,40 +23,56 @@
 		"commands": [
 			{
 				"command": "varnameChanger.toHump",
-				"title": "varnameChanger.toHump",
+				"title": "底杠转驼峰",
 				"category": "转驼峰"
 			},
 			{
 				"command": "varnameChanger.toBottomLine",
-				"title": "varnameChanger.toBottomLine",
+				"title": "驼峰转底杠",
 				"category": "转底杠"
 			},
 			{
 				"command": "varnameChanger.deleteQuote",
-				"title": "varnameChanger.deleteQuote",
+				"title": "删除引号",
 				"category": "删引号"
 			}
 		],
 		"keybindings": [
 			{
 				"command": "varnameChanger.toHump",
-				"key": "ctrl+f1",
-				"mac": "cmd+f1",
+				"key": "ctrl+shift+1",
+				"mac": "ctrl+shift+1",
 				"when": "editorTextFocus"
 			},
 			{
 				"command": "varnameChanger.toBottomLine",
-				"key": "ctrl+f2",
-				"mac": "cmd+f2",
+				"key": "ctrl+shift+2",
+				"mac": "ctrl+shift+2",
 				"when": "editorTextFocus"
 			},
 			{
 				"command": "varnameChanger.deleteQuote",
 				"key": "ctrl+shift+'",
-				"mac": "cmd+shift+'",
+				"mac": "ctrl+shift+'",
 				"when": "editorTextFocus"
 			}
-		]
+		],
+		"menus": {
+			"editor/context": [
+				{
+          "command": "varnameChanger.toHump",
+					"group": "5_cutcopypaste"
+				},
+				{
+          "command": "varnameChanger.toBottomLine",
+					"group": "5_cutcopypaste"
+				},
+				{
+          "command": "varnameChanger.deleteQuote",
+					"group": "5_cutcopypaste"
+				}
+			]
+		}
 	},
 	"scripts": {
 		"vscode:prepublish": "npm run compile",
