@@ -2,9 +2,9 @@
 	"name": "varname-changer",
 	"displayName": "Varname Changer",
 	"description": "Change your variable name easily!",
-	"version": "0.1.0",
+	"version": "0.2.0",
 	"publisher": "urnotzane",
-	"icon": "src/img/icon.png",
+	"icon": "images/icon.png",
 	"engines": {
 		"vscode": "^1.40.0"
 	},

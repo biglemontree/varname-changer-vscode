@@ -12,6 +12,10 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
 - `Fixed` for any bug fixes.
 - `Security` in case of vulnerabilities.
 
+## [0.2.0] - 2019-12-09
+### Changed
+- Change icon file path.
+
 ## [0.1.0] - 2019-12-09
 ### Added
 - Support context menu.
