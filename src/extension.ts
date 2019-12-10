@@ -1,7 +1,7 @@
 // The module 'vscode' contains the VS Code extensibility API
 // Import the module and reference it with the alias vscode in your code below
 import * as vscode from 'vscode';
-import { toBottomLine, toHump, logWarn, logInfo, deleteQuote } from './util';
+import { toBottomLine, toHump, logWarn, logInfo, deleteQuote, jsonToHump } from './util';
 
 function replaceFactory(handler:Function, name:string) {
 	// 注册编辑器事件
@@ -12,6 +12,7 @@ function replaceFactory(handler:Function, name:string) {
 		selectRange.forEach((range) => {
 			const { start, end } = range;
 			const text = getText(range);
+			logInfo(text);
 			if (text) {
 				const location = new vscode.Range(start, end);
 				edit.replace(location, handler(text));
@@ -21,11 +22,11 @@ function replaceFactory(handler:Function, name:string) {
 		});
 	});
 }
-export function activate(context: vscode.ExtensionContext) {
+export function activate(context:vscode.ExtensionContext) {
 	logInfo(`varnameChanger is now active!`);
 
 	context.subscriptions.push(replaceFactory(toBottomLine, 'toBottomLine'));
-	context.subscriptions.push(replaceFactory(toHump, 'toHump'));
+	context.subscriptions.push(replaceFactory(jsonToHump, 'toHump'));
 	context.subscriptions.push(replaceFactory(deleteQuote, 'deleteQuote'));
 }
 

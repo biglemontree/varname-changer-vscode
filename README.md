@@ -12,7 +12,7 @@ Function | Example | Command | Keybindings
 删除引号 | 'variableName' => variableName | varname.deleteQuote | `ctrl+shift+'`
 
 ## Schedule:pencil:
-- 根据逗号和分号确定对象字段名，并且仅更改等号或冒号前的字符串。
+- 根据逗号和分号确定对象字段名，并且仅更改等号或冒号前的字符串，如果没有可区分的符号，则默认更改所有选中的字符串。
   
   Determines object fields name based on commas and semicolons, and only changes the string before the equals or colons.
 
