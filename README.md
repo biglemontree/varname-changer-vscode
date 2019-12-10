@@ -2,7 +2,7 @@
 
 Change your variable name easily!
 
-## Use
+## :sparkles:Use
 > Select your string and use the following commands.
 
 Function | Example | Command | Keybindings
@@ -11,7 +11,23 @@ Function | Example | Command | Keybindings
 驼峰转底杠 | variableName => variable_name | varname.toBottomLine | `ctrl+shift+2`
 删除引号 | 'variableName' => variableName | varname.deleteQuote | `ctrl+shift+'`
 
-## Finally
+## :pencil:Schedule
+- 根据逗号和分号确定对象字段名，并且仅更改等号或冒号前的字符串。
+  
+  Determines object fields name based on commas and semicolons, and only changes the string before the equals or colons.
+
+- 每次转换type时皆生成一个字段名映射的selector函数。
+  
+  Generate a `selector` function for field name mapping every time when type is converted.
+
+## :pushpin:Undetermined
+I called this project `varnameChanger` in the outset.But it will do more. So maybe call it `fields-generator`?
+I am not sure of this.
+
+## :package:Installation
+Open your VSCode and search `varnameChanger` in extensions store.
+
+## :camera_flash:Finally
 If you have any problem in using.Please send [email](mailto:urnotzane@163.com) or create an [issue](https://github.com/urnotzane/varname-changer-vscode/issues) to me.Thanks!
 
-**Enjoy!**
+**Enjoy:see_no_evil:!**
