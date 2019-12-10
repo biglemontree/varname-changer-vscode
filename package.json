@@ -5,6 +5,7 @@
 	"version": "0.2.1",
 	"publisher": "urnotzane",
 	"icon": "images/icon.png",
+	"license": "MIT",
 	"engines": {
 		"vscode": "^1.40.0"
 	},
@@ -60,15 +61,15 @@
 		"menus": {
 			"editor/context": [
 				{
-          "command": "varnameChanger.toHump",
+					"command": "varnameChanger.toHump",
 					"group": "5_cutcopypaste"
 				},
 				{
-          "command": "varnameChanger.toBottomLine",
+					"command": "varnameChanger.toBottomLine",
 					"group": "5_cutcopypaste"
 				},
 				{
-          "command": "varnameChanger.deleteQuote",
+					"command": "varnameChanger.deleteQuote",
 					"group": "5_cutcopypaste"
 				}
 			]
@@ -86,18 +87,21 @@
 		"@types/mocha": "^5.2.7",
 		"@types/node": "^12.11.7",
 		"@types/vscode": "^1.40.0",
+		"generator-code": "^1.2.9",
 		"glob": "^7.1.5",
 		"mocha": "^6.2.2",
-		"typescript": "^3.6.4",
 		"tslint": "^5.20.0",
-		"vscode-test": "^1.2.2"
+		"typescript": "^3.6.4",
+		"vsce": "^1.71.0",
+		"vscode-test": "^1.2.2",
+		"yo": "^3.1.1"
 	},
-  "bugs": {
-      "url": "https://github.com/urnotzane/varname-changer-vscode/issues"
-  },
-  "repository": {
-      "type": "git",
-      "url": "https://github.com/urnotzane/varname-changer-vscode.git"
-  },
-  "homepage": "https://github.com/urnotzane/varname-changer-vscode/blob/master/README.md"
+	"bugs": {
+		"url": "https://github.com/urnotzane/varname-changer-vscode/issues"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/urnotzane/varname-changer-vscode.git"
+	},
+	"homepage": "https://github.com/urnotzane/varname-changer-vscode/blob/master/README.md"
 }
